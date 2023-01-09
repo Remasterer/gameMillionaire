@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gameMillionaire/static/css/main.3d3c9a96.css",
+    "main.js": "/gameMillionaire/static/js/main.26957db6.js",
+    "static/media/Inter.ttf": "/gameMillionaire/static/media/Inter.aadb65ac45347ff46699.ttf",
+    "static/media/hand.svg": "/gameMillionaire/static/media/hand.2eccdd940510b1ef7ca43695d54f3f00.svg",
+    "index.html": "/gameMillionaire/index.html",
+    "main.3d3c9a96.css.map": "/gameMillionaire/static/css/main.3d3c9a96.css.map",
+    "main.26957db6.js.map": "/gameMillionaire/static/js/main.26957db6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d3c9a96.css",
+    "static/js/main.26957db6.js"
+  ]
+}
