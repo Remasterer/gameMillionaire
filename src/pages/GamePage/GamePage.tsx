@@ -42,7 +42,7 @@ export const GamePage = () => {
       setIsAnswerGiven(false);
     }, 1000);
   };
-  console.log('g12');
+
   return (
     <div className={block()}>
       <GameScreen

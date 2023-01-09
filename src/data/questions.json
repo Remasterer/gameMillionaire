@@ -1,16 +1,26 @@
 [
   {
-    "id": "id-1",
-    "question": "When the second world war started?",
+    "question": "When the World War 2 started?",
     "answerOptions": ["1939", "1914", "1941", "1962"],
     "rightAnswers": ["1939"],
     "reward": 100
   },
   {
-    "id": "id-2",
-    "question": "When the first world war started?",
+    "question": "When the World War 1 started?",
     "answerOptions": ["1939", "1914", "1941", "1962"],
     "rightAnswers": [ "1914"],
     "reward": 1000
+  },
+  {
+    "question": "Who was the singer in The Beatles?",
+    "answerOptions": ["John Lennnon", "Paul McCartney", "Ozzy Osborne", "Post Malone"],
+    "rightAnswers": ["John Lennnon", "Paul McCartney"],
+    "reward": 5000
+  },
+  {
+    "question": "Who was the youngest singer in the Beatles?",
+    "answerOptions": ["John Lennnon", "George Harrison", "Ozzy Osborne", "Post Malone"],
+    "rightAnswers": ["George Harrison"],
+    "reward": 10000
   }
 ]
