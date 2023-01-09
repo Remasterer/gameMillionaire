@@ -68,9 +68,12 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false",
     "lint": "eslint --fix src/**/*.{js,jsx,ts,tsx}",
-    "eject": "jest"
+    "lint-staged": "npx lint-staged",
+    "eject": "jest",
+    "pre-commit": "npm run lint-staged",
+    "pre-push": "npm run test"
   },
   "eslintConfig": {
     "extends": [
