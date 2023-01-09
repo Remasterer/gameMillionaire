@@ -1,0 +1,40 @@
+@import '../../styles/shared';
+
+.button {
+  background: $button-primary-color;
+  border: 1px solid $button-primary-color;
+  color: $button-primary-text-color;
+  border-radius: 12px;
+  max-width: 288px;
+  padding: .8rem;
+  font-weight: 600;
+  font-size: .7rem;
+  width: 100%;
+
+  &:active {
+    background-color: $button-primary-pressed-color;
+  }
+
+  @media screen and (min-width: 980px){
+    max-width: 296px;
+    font-size: 1rem;
+
+    &:hover {
+      cursor: pointer;
+      background: $button-primary-hover-color;
+      border: 1px solid $button-primary-hover-color;
+    }
+  }
+
+  &--hexagon {
+    @include hexagon-borders;
+    max-width: 320px;
+    padding: 1rem 1.4rem;
+    color: $black100;
+
+    @media screen and (min-width: 980px){
+      max-width: 390px;
+      padding: 1.4rem;
+    }
+  }
+}

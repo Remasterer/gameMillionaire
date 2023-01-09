@@ -1,0 +1,75 @@
+@import "../../styles/shared";
+
+.game-progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    margin-top: .4rem;
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+    &__reward {
+      font-size: .7rem;
+      width: 100%;
+      max-width: 240px;
+      padding: .4rem;
+      @include hexagon-borders(35px);
+    }
+
+    &::before {
+      content: ' ';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      height: 1px;
+      background: $black40;
+      width: 100%;
+      transform: translateY(-50%);
+      z-index: -2;
+    }
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &--current {
+      &::before {
+        background: $orange100;
+      }
+
+      .game-progress__item__reward  {
+        color: $orange100;
+
+        &::after, &::before {
+          border-color: $orange100;
+        }
+      }
+    }
+
+    &--previous {
+      .game-progress__item__reward  {
+        color: $black40;
+      }
+    }
+  }
+
+  @media screen and (min-width: 980px) {
+    width: 100%;
+
+    &__item {
+      &__reward {
+        max-width: 240px;
+        font-size: 1rem;
+        @include hexagon-borders(40px);
+        padding: .9rem;
+      }
+    }
+  }
+}

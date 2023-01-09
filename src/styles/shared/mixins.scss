@@ -1,0 +1,55 @@
+@mixin hexagon-borders($height: 60px){
+  position: relative;
+  background: transparent;
+  border: none;
+  z-index: 2;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    border-radius: 4px;
+    height: calc(#{$height} / 2);
+    z-index: -1;
+    border: 1px solid #D0D0D8;
+    background: $white100;
+  }
+
+  &:before {
+    top: -1px;
+    transform: perspective(14px) rotateX(3deg);
+    border-bottom: none;
+  }
+
+  &:after {
+    bottom: -1px;
+    transform: perspective(14px) rotateX(-3deg);
+    border-top: none;
+  }
+
+  &:active {
+    background-color: unset;
+  }
+
+  @media screen and (min-width: 980px){
+    &:before {
+      top: 10px;
+    }
+
+    &:after {
+      bottom: 10px;
+    }
+
+    &:hover {
+      background: none;
+      border: none;
+
+      &:before,
+      &:after {
+        border-color: $orange100;
+      }
+    }
+  }
+}

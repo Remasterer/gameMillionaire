@@ -1,0 +1,6 @@
+.idea
+node_modules/*
+public/*
+src/react-app-env.d.ts
+*.test.ts
+*.test.tsx

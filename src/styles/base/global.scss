@@ -1,0 +1,21 @@
+@import '../shared';
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: $main-font;
+  line-height: 1.16;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}

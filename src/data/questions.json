@@ -1,0 +1,16 @@
+[
+  {
+    "id": "id-1",
+    "question": "When the second world war started?",
+    "answerOptions": ["1939", "1914", "1941", "1962"],
+    "rightAnswers": ["1939"],
+    "reward": 100
+  },
+  {
+    "id": "id-2",
+    "question": "When the first world war started?",
+    "answerOptions": ["1939", "1914", "1941", "1962"],
+    "rightAnswers": [ "1914"],
+    "reward": 1000
+  }
+]
