@@ -1,5 +1,6 @@
 {
   "name": "headway",
+  "homepage": "https://Remasterer.github.io/gameMillionaire",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -73,7 +74,9 @@
     "lint-staged": "npx lint-staged",
     "eject": "jest",
     "pre-commit": "npm run lint-staged",
-    "pre-push": "npm run test"
+    "pre-push": "npm run test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -116,6 +119,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "gh-pages": "^4.0.0",
     "husky": "^8.0.3",
     "jest-watch-typeahead": "^0.6.5",
     "lint-staged": "^13.1.0",
